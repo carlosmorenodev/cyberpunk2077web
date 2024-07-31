@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'Cyberpunk Font';
+    src: url('fonts/SDGlitch_Demo.ttf') format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+html,
+a {
+
+    color: white;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/background.jpg');
+}
+
+.web-logo {
+    position: absolute;
+    top: 130px;
+    left: -40px;
+    transform: rotate(-30deg);
+}
+
+.samurai-logo {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    transform: rotate(20deg);
+}
+
+
+nav {
+    text-align: center;
+}
+
+
+li {
+    list-style-type: none;
+    margin: 10px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-family: 'Cyberpunk Font';
+}
+
+.pagina {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: .6s;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(8px);
+
+    & .pagina-content {
+        width: 90%;
+        height: 90%;
+
+    }
+
+}
+
+.informacion {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    /* backdrop-filter: blur(8px); */
+    z-index: 2;
+    /* transition: .6s; */
+
+    /* transform: translate(50%, 50%); */
+    & .pagina-content {
+        background-color: #FCEE0A;
+        background-image: url('img/informacion-wallpaper.png');
+        background-size: cover;
+        position: relative;
+
+        /* display: flex;
+        align-items: flex-start;
+        justify-content: flex-start; */
+        & .informacion-content {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 100px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            gap: 20px;
+
+            & h2 {
+                font-family: 'Cyberpunk Font';
+                color: black;
+                font-size: 6rem;
+                width: 800px;
+            }
+
+            & .informacion-buttons {
+                & a {
+                    font-family: "Roboto", sans-serif;
+                    font-size: 1.5rem;
+                    color: black;
+                    border: solid 1px black;
+                    padding: 5px 15px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+}
+
+.informacion-active {
+    top: 0;
+}
+
+
+
+/* PERSONAJES */
+
+.personajes {
+    /* z-index: 3; */
+    left: -100%;
+    top: 0;
+    /* overflow: auto; */
+
+    & .pagina-content {
+        background-color: #FCEE0A;
+        padding: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+.character1 {    
+    transform: skewX(-15deg);
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    border: solid black 2px;
+
+    & img {
+        transform: skewX(20deg);
+        width: 300%;
+        object-fit: cover;
+        height: 100%;
+        position: absolute;
+        left: -300px;
+    }
+}
+
+.character2 {    
+    transform: skewX(-15deg);
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    border: solid black 2px;
+
+    & img {
+        transform: skewX(20deg);
+        width: 300%;
+        object-fit: cover;
+        height: 100%;
+        position: absolute;
+        left: -200px;
+    }
+}
+.character3 {    
+    transform: skewX(-15deg);
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    border: solid black 2px;
+
+    & img {
+        transform: skewX(20deg);
+        width: 300%;
+        object-fit: cover;
+        height: 100%;
+        position: absolute;
+        left: -300px;
+    }
+}
+
+.character4 {    
+    transform: skewX(-15deg);
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+    border: solid black 2px;
+
+    & img {
+        transform: skewX(20deg);
+        width: 300%;
+        object-fit: cover;
+        height: 100%;
+        position: absolute;
+        left: -300px;
+    }
+}
+
+
+/* .character-img {
+    width: 300px;
+
+    & img {
+        width: 100%;
+    }
+} */
+
+
+
+.personajes-active {
+    left: 0;
+}
+
+/* NIGHT CITY */
+
+.night-city {
+    z-index: 2;
+    bottom: -100%;
+
+    & .pagina-content {
+        background-color: #FCEE0A;
+    }
+}
+
+.night-city-active {
+    bottom: 0;
+}
+
+/* HISTORIA */
+
+.historia {
+    /* backdrop-filter: blur(8px); */
+    z-index: 2;
+    right: -100%;
+
+    & .pagina-content {
+        background-color: #FCEE0A;
+    }
+}
+
+.historia-active {
+    right: 0;
+}
+
+
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 4rem;
+    color: #FCEE0A;
+    cursor: pointer;
+}
