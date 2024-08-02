@@ -64,22 +64,11 @@ li {
     list-style-type: none;
     margin: 10px;
     position: relative;
-    transition: .6s;
+    transition: .9s;
 
-    &:hover .line {
-        opacity: 1;
+    &:hover {
+        transform: scale(0.9);
     }
-}
-
-.line {
-    height: 3px;
-    width: 120%;
-    background-color: #FCEE0A;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) rotate(5deg);
-    opacity: 0;
 }
 
 a {
@@ -376,8 +365,9 @@ a {
     width: 550px;
 
     & p {
-        font-size: 1.5rem;
-        font-family: "Roboto", sans-serif;
+        font-size: 1.7rem;
+        font-family: "Refinery";
+        line-height: 30px;
         color: black;
         padding: 10px;
     }
@@ -396,4 +386,8 @@ a {
     font-size: 4rem;
     color: #FCEE0A;
     cursor: pointer;
+    transition: .9s;
+    &:hover {
+        transform: scale(0.8);
+    }
 }
