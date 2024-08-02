@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Teko:wght@300..700&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -55,6 +56,7 @@ a {
 
 nav {
     text-align: center;
+
 }
 
 
@@ -63,7 +65,8 @@ li {
     margin: 10px;
     position: relative;
     transition: .6s;
-    &:hover  .line {
+
+    &:hover .line {
         opacity: 1;
     }
 }
@@ -73,7 +76,7 @@ li {
     width: 120%;
     background-color: #FCEE0A;
     position: absolute;
-    top:50%;
+    top: 50%;
     left: 50%;
     transform: translateX(-50%) rotate(5deg);
     opacity: 0;
@@ -90,7 +93,7 @@ a {
     color: #FCEE0A;
     height: 50px;
     /* padding-inline: 20px;; */
-    
+
 }
 
 
@@ -174,25 +177,22 @@ a {
 /* PERSONAJES */
 
 .personajes {
-    /* z-index: 3; */
+    z-index: 3;
     left: -100%;
     top: 0;
 
 
     & .pagina-content {
-        /* background-color: #FCEE0A; */
-        /* background: rgb(252,238,10);
-background: linear-gradient(90deg, rgba(252,238,10,1) 0%, rgba(0,0,0,1) 30%, rgba(0,0,0,1) 47%, rgba(252,238,10,1) 68%, rgba(0,0,0,1) 79%, rgba(0,0,0,1) 88%, rgba(252,238,10,1) 98%); */
         background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/character-wallpaper.jpg');
         background-position: center;
         padding: 50px 100px;
-
+        z-index: -60;
 
         display: flex;
         justify-content: space-evenly;
         align-items: center;
         gap: 10px;
-        flex-wrap: wrap
+        flex-wrap: wrap;
     }
 }
 
